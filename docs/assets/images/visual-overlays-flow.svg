@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 620" font-family="Inter, Segoe UI, sans-serif">
+  <defs>
+    <linearGradient id="vo-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7c4dff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#651fff;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-4%" y="-4%" width="108%" height="112%">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+    <filter id="glow">
+      <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#ffca28" flood-opacity="0.5"/>
+    </filter>
+    <filter id="glow-purple">
+      <feDropShadow dx="0" dy="0" stdDeviation="8" flood-color="#7c4dff" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="560" height="620" rx="16" fill="#1e1e1e"/>
+
+  <!-- Title -->
+  <text x="280" y="40" text-anchor="middle" fill="#ffffff" font-size="28" font-weight="700">Visual Overlays</text>
+  <text x="280" y="64" text-anchor="middle" fill="#aaaaaa" font-size="15">5-step logo animation pipeline</text>
+
+  <!-- Input -->
+  <rect x="155" y="84" width="250" height="44" rx="12" fill="#2d2d2d" filter="url(#glow)" stroke="#ffca28" stroke-width="2.5"/>
+  <text x="280" y="112" text-anchor="middle" fill="#ffca28" font-size="18" font-weight="700">Video + Script</text>
+
+  <!-- Arrow -->
+  <line x1="280" y1="128" x2="280" y2="156" stroke="#ffca28" stroke-width="2.5" stroke-dasharray="6,4"/>
+  <polygon points="272,152 280,166 288,152" fill="#ffca28"/>
+
+  <!-- Step 1: Script Scanning -->
+  <rect x="80" y="170" width="400" height="60" rx="14" fill="url(#vo-grad)" filter="url(#shadow)"/>
+  <text x="120" y="196" fill="rgba(255,255,255,0.6)" font-size="13" font-weight="700">STEP 1</text>
+  <text x="120" y="218" fill="#ffffff" font-size="18" font-weight="700">Script Scanning</text>
+  <text x="310" y="200" fill="rgba(255,255,255,0.5)" font-size="13">Detect entity mentions via asset library</text>
+
+  <!-- Arrow -->
+  <line x1="280" y1="230" x2="280" y2="254" stroke="#7c4dff" stroke-width="2.5" stroke-dasharray="6,4"/>
+  <polygon points="272,250 280,264 288,250" fill="#7c4dff"/>
+
+  <!-- Step 2: Timestamp Matching -->
+  <rect x="80" y="268" width="400" height="60" rx="14" fill="url(#vo-grad)" filter="url(#shadow)"/>
+  <text x="120" y="294" fill="rgba(255,255,255,0.6)" font-size="13" font-weight="700">STEP 2</text>
+  <text x="120" y="316" fill="#ffffff" font-size="18" font-weight="700">Timestamp Matching</text>
+  <text x="340" y="298" fill="rgba(255,255,255,0.5)" font-size="13">Word-level sync to narration</text>
+
+  <!-- Arrow -->
+  <line x1="280" y1="328" x2="280" y2="352" stroke="#7c4dff" stroke-width="2.5" stroke-dasharray="6,4"/>
+  <polygon points="272,348 280,362 288,348" fill="#7c4dff"/>
+
+  <!-- Step 3: Style Selection -->
+  <rect x="80" y="366" width="400" height="60" rx="14" fill="url(#vo-grad)" filter="url(#shadow)"/>
+  <text x="120" y="392" fill="rgba(255,255,255,0.6)" font-size="13" font-weight="700">STEP 3</text>
+  <text x="120" y="414" fill="#ffffff" font-size="18" font-weight="700">Animation Style Selection</text>
+  <text x="400" y="396" fill="rgba(255,255,255,0.5)" font-size="13">AI picks style per context</text>
+
+  <!-- Arrow -->
+  <line x1="280" y1="426" x2="280" y2="450" stroke="#7c4dff" stroke-width="2.5" stroke-dasharray="6,4"/>
+  <polygon points="272,446 280,460 288,446" fill="#7c4dff"/>
+
+  <!-- Step 4: Overlay Rendering -->
+  <rect x="80" y="464" width="400" height="60" rx="14" fill="url(#vo-grad)" filter="url(#shadow)"/>
+  <text x="120" y="490" fill="rgba(255,255,255,0.6)" font-size="13" font-weight="700">STEP 4</text>
+  <text x="120" y="512" fill="#ffffff" font-size="18" font-weight="700">Overlay Rendering</text>
+  <text x="332" y="494" fill="rgba(255,255,255,0.5)" font-size="13">Transparent motion graphics</text>
+
+  <!-- Arrow -->
+  <line x1="280" y1="524" x2="280" y2="548" stroke="#7c4dff" stroke-width="2.5" stroke-dasharray="6,4"/>
+  <polygon points="272,544 280,558 288,544" fill="#7c4dff"/>
+
+  <!-- Step 5: Video Compositing (highlighted) -->
+  <rect x="110" y="562" width="340" height="44" rx="14" fill="url(#vo-grad)" filter="url(#glow-purple)"/>
+  <text x="140" y="589" fill="rgba(255,255,255,0.6)" font-size="13" font-weight="700">STEP 5</text>
+  <text x="244" y="589" fill="#ffffff" font-size="18" font-weight="700">Composite onto Video</text>
+</svg>

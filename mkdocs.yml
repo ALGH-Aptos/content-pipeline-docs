@@ -1,0 +1,64 @@
+site_name: "ALGH - Content Pipeline Automation"
+site_description: "End-to-end automated content creation pipeline"
+site_author: ALGH
+
+theme:
+  name: material
+  palette:
+    - scheme: slate
+      primary: deep purple
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    - scheme: default
+      primary: deep purple
+      accent: amber
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - toc.integrate
+    - search.highlight
+    - search.suggest
+    - content.tabs.link
+  font:
+    text: Inter
+    code: Roboto Mono
+  custom_dir: overrides
+  icon:
+    logo: material/movie-filter
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Pipeline Overview: pipeline-overview.md
+  - Pipeline Stages:
+    - "Stage 1: Topic Discovery": pipeline/topic-discovery.md
+    - "Stage 2: Script Generation": pipeline/script-generation.md
+    - "Stage 3: Script Personalization": pipeline/script-personalization.md
+    - "Stage 4: Video Production": pipeline/video-production.md
+    - "Stage 5: Visual Overlays": pipeline/visual-overlays.md
+    - "Stage 6: Captions": pipeline/captions.md
+    - "Stage 7: Publishing": pipeline/publishing.md
+    - "Output Showcase": pipeline/output-showcase.md
+  - Knowledge Base: knowledge-base.md
+  - Multi-Account Scaling: multi-account.md
+  - Technology Stack: technology-stack.md
