@@ -265,18 +265,22 @@
   <polygon points="343,1164 350,1178 357,1164" fill="#ffca28"/>
 
   <!-- Platform fan-out -->
-  <line x1="350" y1="1178" x2="175" y2="1200" stroke="#ffca28" stroke-width="1.5" stroke-dasharray="4,3"/>
-  <line x1="350" y1="1178" x2="350" y2="1200" stroke="#ffca28" stroke-width="1.5" stroke-dasharray="4,3"/>
-  <line x1="350" y1="1178" x2="525" y2="1200" stroke="#ffca28" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <line x1="350" y1="1178" x2="110" y2="1200" stroke="#ffca28" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <line x1="350" y1="1178" x2="280" y2="1200" stroke="#ffca28" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <line x1="350" y1="1178" x2="440" y2="1200" stroke="#ffca28" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <line x1="350" y1="1178" x2="600" y2="1200" stroke="#ffca28" stroke-width="1.5" stroke-dasharray="4,3"/>
 
-  <rect x="105" y="1204" width="140" height="42" rx="10" fill="url(#sa-source)" filter="url(#shadow)" stroke="#ffca28" stroke-width="1.5"/>
-  <text x="175" y="1230" text-anchor="middle" fill="#ffffff" font-size="15" font-weight="700">TikTok</text>
+  <rect x="40" y="1204" width="140" height="42" rx="10" fill="url(#sa-source)" filter="url(#shadow)" stroke="#ffca28" stroke-width="1.5"/>
+  <text x="110" y="1230" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="700">TikTok</text>
 
-  <rect x="280" y="1204" width="140" height="42" rx="10" fill="url(#sa-source)" filter="url(#shadow)" stroke="#ffca28" stroke-width="1.5"/>
-  <text x="350" y="1230" text-anchor="middle" fill="#ffffff" font-size="15" font-weight="700">Facebook</text>
+  <rect x="200" y="1204" width="155" height="42" rx="10" fill="url(#sa-source)" filter="url(#shadow)" stroke="#ffca28" stroke-width="1.5"/>
+  <text x="278" y="1230" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="700">YouTube Shorts</text>
 
-  <rect x="455" y="1204" width="140" height="42" rx="10" fill="url(#sa-source)" filter="url(#shadow)" stroke="#ffca28" stroke-width="1.5"/>
-  <text x="525" y="1230" text-anchor="middle" fill="#ffffff" font-size="15" font-weight="700">Instagram</text>
+  <rect x="370" y="1204" width="155" height="42" rx="10" fill="url(#sa-source)" filter="url(#shadow)" stroke="#ffca28" stroke-width="1.5"/>
+  <text x="448" y="1230" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="700">Instagram Reels</text>
+
+  <rect x="540" y="1204" width="150" height="42" rx="10" fill="url(#sa-source)" filter="url(#shadow)" stroke="#ffca28" stroke-width="1.5"/>
+  <text x="615" y="1230" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="700">Facebook Reels</text>
 
   <!-- ==================== STATS BAR ==================== -->
   <line x1="60" y1="1280" x2="640" y2="1280" stroke="#333" stroke-width="1"/>

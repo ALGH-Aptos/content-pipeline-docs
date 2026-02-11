@@ -18,7 +18,7 @@ This page provides the high-level view. Each stage has its own dedicated page wi
 | **4** | Video Production | Produces the full video — talking-head presenter, supporting visuals, and narration audio |
 | **5** | Visual Overlays | Adds branded logo animations that appear when relevant entities are mentioned |
 | **6** | Captions | Burns in word-by-word animated captions synced to the narration |
-| **7** | Publishing | Distributes the finished video across TikTok, Instagram, and Facebook |
+| **7** | Publishing | Distributes the finished video across TikTok, YouTube Shorts, Instagram Reels, and Facebook Reels |
 
 ---
 

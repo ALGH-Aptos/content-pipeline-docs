@@ -20,8 +20,9 @@ Publishing is handled through **DoubleSpeed.ai**, a platform that provides API a
 Through the DoubleSpeed API, finished videos are published to:
 
 - **TikTok**
-- **Facebook**
-- **Instagram**
+- **YouTube Shorts**
+- **Instagram Reels**
+- **Facebook Reels**
 
 This enables a single video to be distributed across all target platforms without manual uploading to each one individually.
 
@@ -61,8 +62,9 @@ Finished Video (from Stage 6)
         v
   +---------------+
   |  DoubleSpeed   |  ──>  TikTok
-  |     API        |  ──>  Facebook
-  |                |  ──>  Instagram
+  |     API        |  ──>  YouTube Shorts
+  |                |  ──>  Instagram Reels
+  |                |  ──>  Facebook Reels
   +---------------+
 ```
 
