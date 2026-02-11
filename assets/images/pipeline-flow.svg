@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 860" font-family="Inter, Segoe UI, sans-serif">
+  <defs>
+    <linearGradient id="stage-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7c4dff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#651fff;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="output-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2d2d2d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3a3a3a;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-4%" y="-4%" width="108%" height="112%">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="720" height="860" rx="16" fill="#1e1e1e"/>
+
+  <!-- Title -->
+  <text x="360" y="46" text-anchor="middle" fill="#ffffff" font-size="26" font-weight="700" letter-spacing="0.5">Pipeline Flow</text>
+  <text x="360" y="70" text-anchor="middle" fill="#aaaaaa" font-size="15">From trending topic to published video</text>
+
+  <!-- Stage 1 -->
+  <rect x="60" y="96" width="600" height="68" rx="14" fill="url(#stage-grad)" filter="url(#shadow)"/>
+  <text x="110" y="125" fill="rgba(255,255,255,0.6)" font-size="14" font-weight="700">STAGE 1</text>
+  <text x="110" y="148" fill="#ffffff" font-size="20" font-weight="600">Topic Discovery</text>
+  <rect x="480" y="110" width="160" height="40" rx="10" fill="rgba(0,0,0,0.25)"/>
+  <text x="560" y="136" text-anchor="middle" fill="#ffca28" font-size="14" font-weight="600">Selected Topic</text>
+
+  <!-- Arrow -->
+  <line x1="360" y1="164" x2="360" y2="188" stroke="#7c4dff" stroke-width="3" stroke-dasharray="6,4"/>
+  <polygon points="351,184 360,198 369,184" fill="#7c4dff"/>
+
+  <!-- Stage 2 -->
+  <rect x="60" y="200" width="600" height="68" rx="14" fill="url(#stage-grad)" filter="url(#shadow)"/>
+  <text x="110" y="229" fill="rgba(255,255,255,0.6)" font-size="14" font-weight="700">STAGE 2</text>
+  <text x="110" y="252" fill="#ffffff" font-size="20" font-weight="600">Script Generation</text>
+  <rect x="480" y="214" width="160" height="40" rx="10" fill="rgba(0,0,0,0.25)"/>
+  <text x="560" y="240" text-anchor="middle" fill="#ffca28" font-size="14" font-weight="600">Base Script</text>
+
+  <!-- Arrow -->
+  <line x1="360" y1="268" x2="360" y2="292" stroke="#7c4dff" stroke-width="3" stroke-dasharray="6,4"/>
+  <polygon points="351,288 360,302 369,288" fill="#7c4dff"/>
+
+  <!-- Stage 3 -->
+  <rect x="60" y="304" width="600" height="68" rx="14" fill="url(#stage-grad)" filter="url(#shadow)"/>
+  <text x="110" y="333" fill="rgba(255,255,255,0.6)" font-size="14" font-weight="700">STAGE 3</text>
+  <text x="110" y="356" fill="#ffffff" font-size="20" font-weight="600">Script Personalization</text>
+  <rect x="480" y="318" width="160" height="40" rx="10" fill="rgba(0,0,0,0.25)"/>
+  <text x="560" y="344" text-anchor="middle" fill="#ffca28" font-size="14" font-weight="600">Flavored Script</text>
+
+  <!-- Arrow -->
+  <line x1="360" y1="372" x2="360" y2="396" stroke="#7c4dff" stroke-width="3" stroke-dasharray="6,4"/>
+  <polygon points="351,392 360,406 369,392" fill="#7c4dff"/>
+
+  <!-- Stage 4 (larger) -->
+  <rect x="60" y="408" width="600" height="84" rx="14" fill="url(#stage-grad)" filter="url(#shadow)"/>
+  <text x="110" y="437" fill="rgba(255,255,255,0.6)" font-size="14" font-weight="700">STAGE 4</text>
+  <text x="110" y="462" fill="#ffffff" font-size="20" font-weight="600">Video Production</text>
+  <text x="110" y="480" fill="rgba(255,255,255,0.5)" font-size="13">12-step sub-pipeline</text>
+  <rect x="480" y="426" width="160" height="40" rx="10" fill="rgba(0,0,0,0.25)"/>
+  <text x="560" y="452" text-anchor="middle" fill="#ffca28" font-size="14" font-weight="600">Full Video</text>
+
+  <!-- Arrow -->
+  <line x1="360" y1="492" x2="360" y2="516" stroke="#7c4dff" stroke-width="3" stroke-dasharray="6,4"/>
+  <polygon points="351,512 360,526 369,512" fill="#7c4dff"/>
+
+  <!-- Stage 5 -->
+  <rect x="60" y="528" width="600" height="68" rx="14" fill="url(#stage-grad)" filter="url(#shadow)"/>
+  <text x="110" y="557" fill="rgba(255,255,255,0.6)" font-size="14" font-weight="700">STAGE 5</text>
+  <text x="110" y="580" fill="#ffffff" font-size="20" font-weight="600">Visual Overlays</text>
+  <rect x="480" y="542" width="160" height="40" rx="10" fill="rgba(0,0,0,0.25)"/>
+  <text x="560" y="568" text-anchor="middle" fill="#ffca28" font-size="14" font-weight="600">+ Logo Popups</text>
+
+  <!-- Arrow -->
+  <line x1="360" y1="596" x2="360" y2="620" stroke="#7c4dff" stroke-width="3" stroke-dasharray="6,4"/>
+  <polygon points="351,616 360,630 369,616" fill="#7c4dff"/>
+
+  <!-- Stage 6 -->
+  <rect x="60" y="632" width="600" height="68" rx="14" fill="url(#stage-grad)" filter="url(#shadow)"/>
+  <text x="110" y="661" fill="rgba(255,255,255,0.6)" font-size="14" font-weight="700">STAGE 6</text>
+  <text x="110" y="684" fill="#ffffff" font-size="20" font-weight="600">Captions</text>
+  <rect x="480" y="646" width="160" height="40" rx="10" fill="rgba(0,0,0,0.25)"/>
+  <text x="560" y="672" text-anchor="middle" fill="#ffca28" font-size="14" font-weight="600">+ Captions</text>
+
+  <!-- Arrow -->
+  <line x1="360" y1="700" x2="360" y2="724" stroke="#7c4dff" stroke-width="3" stroke-dasharray="6,4"/>
+  <polygon points="351,720 360,734 369,720" fill="#7c4dff"/>
+
+  <!-- Stage 7 -->
+  <rect x="60" y="736" width="600" height="68" rx="14" fill="url(#stage-grad)" filter="url(#shadow)"/>
+  <text x="110" y="765" fill="rgba(255,255,255,0.6)" font-size="14" font-weight="700">STAGE 7</text>
+  <text x="110" y="788" fill="#ffffff" font-size="20" font-weight="600">Publishing</text>
+  <rect x="480" y="750" width="160" height="40" rx="10" fill="rgba(0,0,0,0.25)"/>
+  <text x="560" y="776" text-anchor="middle" fill="#ffca28" font-size="14" font-weight="600">DoubleSpeed</text>
+
+  <!-- Footer -->
+  <text x="360" y="838" text-anchor="middle" fill="#555555" font-size="12">ALGH — Content Pipeline Automation</text>
+</svg>

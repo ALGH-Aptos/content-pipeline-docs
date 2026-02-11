@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 620" font-family="Inter, Segoe UI, sans-serif">
+  <defs>
+    <linearGradient id="funnel-top" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7c4dff;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#651fff;stop-opacity:0.9" />
+    </linearGradient>
+    <linearGradient id="funnel-mid1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7c4dff;stop-opacity:0.75" />
+      <stop offset="100%" style="stop-color:#651fff;stop-opacity:0.75" />
+    </linearGradient>
+    <linearGradient id="funnel-mid2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7c4dff;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#651fff;stop-opacity:0.6" />
+    </linearGradient>
+    <linearGradient id="funnel-mid3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7c4dff;stop-opacity:0.45" />
+      <stop offset="100%" style="stop-color:#651fff;stop-opacity:0.45" />
+    </linearGradient>
+    <filter id="shadow" x="-4%" y="-4%" width="108%" height="112%">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+    <filter id="glow">
+      <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#ffca28" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="560" height="620" rx="16" fill="#1e1e1e"/>
+
+  <!-- Title -->
+  <text x="280" y="40" text-anchor="middle" fill="#ffffff" font-size="28" font-weight="700">Topic Discovery</text>
+  <text x="280" y="64" text-anchor="middle" fill="#aaaaaa" font-size="15">From thousands of videos to one actionable topic</text>
+
+  <!-- Funnel Layer 1: Trending Videos (widest) -->
+  <polygon points="30,90 530,90 480,172 80,172" fill="url(#funnel-top)" filter="url(#shadow)"/>
+  <text x="280" y="125" text-anchor="middle" fill="#ffffff" font-size="20" font-weight="700">Trending Videos</text>
+  <text x="280" y="150" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="14">Thousands of videos from tracked hashtags &amp; keywords</text>
+
+  <!-- Connector dots -->
+  <circle cx="280" cy="184" r="3.5" fill="#7c4dff" opacity="0.6"/>
+  <circle cx="280" cy="196" r="3.5" fill="#7c4dff" opacity="0.4"/>
+
+  <!-- Funnel Layer 2: Engagement Filtering -->
+  <polygon points="80,210 480,210 420,292 140,292" fill="url(#funnel-mid1)" filter="url(#shadow)"/>
+  <text x="280" y="245" text-anchor="middle" fill="#ffffff" font-size="20" font-weight="700">Engagement Filtering</text>
+  <text x="280" y="270" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="14">Filtered by views, recency, and relevance</text>
+
+  <!-- Connector dots -->
+  <circle cx="280" cy="304" r="3.5" fill="#7c4dff" opacity="0.5"/>
+  <circle cx="280" cy="316" r="3.5" fill="#7c4dff" opacity="0.3"/>
+
+  <!-- Funnel Layer 3: AI Topic Extraction -->
+  <polygon points="140,330 420,330 370,412 190,412" fill="url(#funnel-mid2)" filter="url(#shadow)"/>
+  <text x="280" y="365" text-anchor="middle" fill="#ffffff" font-size="20" font-weight="700">AI Topic Extraction</text>
+  <text x="280" y="390" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="14">Interprets content, extracts real topics</text>
+
+  <!-- Connector dots -->
+  <circle cx="280" cy="424" r="3.5" fill="#7c4dff" opacity="0.4"/>
+  <circle cx="280" cy="436" r="3.5" fill="#7c4dff" opacity="0.2"/>
+
+  <!-- Funnel Layer 4: Ranked & Categorized -->
+  <polygon points="190,450 370,450 340,514 220,514" fill="url(#funnel-mid3)" filter="url(#shadow)"/>
+  <text x="280" y="478" text-anchor="middle" fill="#ffffff" font-size="18" font-weight="700">Ranked &amp; Categorized</text>
+  <text x="280" y="500" text-anchor="middle" fill="rgba(255,255,255,0.55)" font-size="13">Scored by confidence</text>
+
+  <!-- Arrow to output -->
+  <line x1="280" y1="514" x2="280" y2="542" stroke="#ffca28" stroke-width="3" stroke-dasharray="6,4"/>
+  <polygon points="271,538 280,552 289,538" fill="#ffca28"/>
+
+  <!-- Output: Selected Topic -->
+  <rect x="180" y="556" width="200" height="44" rx="12" fill="#2d2d2d" filter="url(#glow)" stroke="#ffca28" stroke-width="2.5"/>
+  <text x="280" y="584" text-anchor="middle" fill="#ffca28" font-size="19" font-weight="700">Selected Topic</text>
+</svg>

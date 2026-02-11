@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 580" font-family="Inter, Segoe UI, sans-serif">
+  <defs>
+    <linearGradient id="sg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7c4dff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#651fff;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="sg-source" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3a3a3a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2d2d2d;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-4%" y="-4%" width="108%" height="112%">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+    <filter id="glow">
+      <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#ffca28" flood-opacity="0.5"/>
+    </filter>
+    <filter id="glow-purple">
+      <feDropShadow dx="0" dy="0" stdDeviation="8" flood-color="#7c4dff" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="560" height="580" rx="16" fill="#1e1e1e"/>
+
+  <!-- Title -->
+  <text x="280" y="40" text-anchor="middle" fill="#ffffff" font-size="28" font-weight="700">Script Generation</text>
+  <text x="280" y="64" text-anchor="middle" fill="#aaaaaa" font-size="15">Multiple data sources converge into one informed script</text>
+
+  <!-- Input: Selected Topic -->
+  <rect x="180" y="88" width="200" height="44" rx="12" fill="#2d2d2d" filter="url(#glow)" stroke="#ffca28" stroke-width="2.5"/>
+  <text x="280" y="116" text-anchor="middle" fill="#ffca28" font-size="18" font-weight="700">Selected Topic</text>
+
+  <!-- Arrow from topic down -->
+  <line x1="280" y1="132" x2="280" y2="168" stroke="#ffca28" stroke-width="2.5" stroke-dasharray="6,4"/>
+  <polygon points="272,164 280,178 288,164" fill="#ffca28"/>
+
+  <!-- Three source boxes -->
+  <!-- Source 1: Knowledge Base (left) -->
+  <rect x="20" y="190" width="154" height="100" rx="12" fill="url(#sg-source)" filter="url(#shadow)" stroke="#7c4dff" stroke-width="1.5"/>
+  <text x="97" y="220" text-anchor="middle" fill="#ffffff" font-size="16" font-weight="700">Knowledge Base</text>
+  <text x="97" y="243" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="12">50+ Articles</text>
+  <text x="97" y="260" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="12">5 Research Papers</text>
+  <text x="97" y="277" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="12">Narrative Documents</text>
+
+  <!-- Source 2: Live Data (center) -->
+  <rect x="194" y="190" width="172" height="100" rx="12" fill="url(#sg-source)" filter="url(#shadow)" stroke="#7c4dff" stroke-width="1.5"/>
+  <text x="280" y="220" text-anchor="middle" fill="#ffffff" font-size="16" font-weight="700">Live Market Data</text>
+  <text x="280" y="243" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="12">Real-time statistics</text>
+  <text x="280" y="260" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="12">Current metrics</text>
+  <text x="280" y="277" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="12">Pulled at generation</text>
+
+  <!-- Source 3: Topic History (right) -->
+  <rect x="386" y="190" width="154" height="100" rx="12" fill="url(#sg-source)" filter="url(#shadow)" stroke="#7c4dff" stroke-width="1.5"/>
+  <text x="463" y="220" text-anchor="middle" fill="#ffffff" font-size="16" font-weight="700">Topic History</text>
+  <text x="463" y="243" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="12">Previous scripts</text>
+  <text x="463" y="260" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="12">Variation tracking</text>
+  <text x="463" y="277" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="12">Anti-repetition</text>
+
+  <!-- Converging arrows from sources to AI hub -->
+  <line x1="97" y1="290" x2="230" y2="365" stroke="#7c4dff" stroke-width="2.5" stroke-dasharray="6,4"/>
+  <polygon points="224,358 234,370 228,356" fill="#7c4dff"/>
+
+  <line x1="280" y1="290" x2="280" y2="360" stroke="#7c4dff" stroke-width="2.5" stroke-dasharray="6,4"/>
+  <polygon points="272,356 280,370 288,356" fill="#7c4dff"/>
+
+  <line x1="463" y1="290" x2="330" y2="365" stroke="#7c4dff" stroke-width="2.5" stroke-dasharray="6,4"/>
+  <polygon points="332,356 326,370 336,358" fill="#7c4dff"/>
+
+  <!-- Central AI Generation Hub -->
+  <rect x="130" y="374" width="300" height="80" rx="16" fill="url(#sg-grad)" filter="url(#glow-purple)"/>
+  <text x="280" y="408" text-anchor="middle" fill="#ffffff" font-size="21" font-weight="700">AI Script Generation</text>
+  <text x="280" y="434" text-anchor="middle" fill="rgba(255,255,255,0.55)" font-size="14">Context-aware, category-optimized</text>
+
+  <!-- Arrow to output -->
+  <line x1="280" y1="454" x2="280" y2="496" stroke="#ffca28" stroke-width="3" stroke-dasharray="6,4"/>
+  <polygon points="272,492 280,506 288,492" fill="#ffca28"/>
+
+  <!-- Output: Base Script -->
+  <rect x="155" y="510" width="250" height="48" rx="12" fill="#2d2d2d" filter="url(#glow)" stroke="#ffca28" stroke-width="2.5"/>
+  <text x="280" y="540" text-anchor="middle" fill="#ffca28" font-size="19" font-weight="700">Base Narration Script</text>
+</svg>

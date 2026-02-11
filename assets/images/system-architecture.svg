@@ -1,0 +1,310 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 1500" font-family="Inter, Segoe UI, sans-serif">
+  <defs>
+    <linearGradient id="sa-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7c4dff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#651fff;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="sa-source" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3a3a3a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2d2d2d;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="sa-service" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2d2d2d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#383838;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="sa-parallel" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7c4dff;stop-opacity:0.2" />
+      <stop offset="100%" style="stop-color:#651fff;stop-opacity:0.2" />
+    </linearGradient>
+    <filter id="shadow" x="-4%" y="-4%" width="108%" height="112%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+    <filter id="glow">
+      <feDropShadow dx="0" dy="0" stdDeviation="5" flood-color="#ffca28" flood-opacity="0.5"/>
+    </filter>
+    <filter id="glow-purple">
+      <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#7c4dff" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="700" height="1500" rx="16" fill="#1a1a1a"/>
+
+  <!-- Title -->
+  <text x="350" y="42" text-anchor="middle" fill="#ffffff" font-size="30" font-weight="700">System Architecture</text>
+  <text x="350" y="68" text-anchor="middle" fill="#aaaaaa" font-size="15">Complete end-to-end pipeline — 7 stages, 7+ services, fully automated</text>
+
+  <!-- ==================== STAGE 1: TOPIC DISCOVERY ==================== -->
+  <rect x="200" y="96" width="300" height="56" rx="14" fill="url(#sa-grad)" filter="url(#shadow)"/>
+  <text x="230" y="120" fill="rgba(255,255,255,0.6)" font-size="11" font-weight="700">STAGE 1</text>
+  <text x="230" y="140" fill="#ffffff" font-size="17" font-weight="700">Topic Discovery</text>
+
+  <!-- Right service: Social Platform Scraper -->
+  <rect x="530" y="98" width="150" height="52" rx="10" fill="url(#sa-service)" filter="url(#shadow)" stroke="#555" stroke-width="1"/>
+  <text x="605" y="120" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="600">Platform Scraper</text>
+  <text x="605" y="136" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-size="10">Trending video API</text>
+  <line x1="500" y1="124" x2="530" y2="124" stroke="#555" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+  <!-- Right service: AI Topic Extraction -->
+  <rect x="530" y="156" width="150" height="52" rx="10" fill="url(#sa-service)" filter="url(#shadow)" stroke="#555" stroke-width="1"/>
+  <text x="605" y="178" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="600">AI Analysis</text>
+  <text x="605" y="194" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-size="10">Topic extraction</text>
+  <line x1="500" y1="135" x2="516" y2="135" stroke="transparent"/>
+  <line x1="500" y1="124" x2="516" y2="182" stroke="#555" stroke-width="1" stroke-dasharray="4,3"/>
+
+  <!-- Arrow down -->
+  <line x1="350" y1="152" x2="350" y2="182" stroke="#7c4dff" stroke-width="2.5" stroke-dasharray="5,4"/>
+  <polygon points="343,178 350,192 357,178" fill="#7c4dff"/>
+
+  <!-- Human checkpoint -->
+  <rect x="270" y="194" width="160" height="30" rx="8" fill="none" stroke="#ffca28" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="350" y="214" text-anchor="middle" fill="#ffca28" font-size="12" font-weight="600">Human Topic Selection</text>
+
+  <!-- Arrow down -->
+  <line x1="350" y1="224" x2="350" y2="254" stroke="#ffca28" stroke-width="2" stroke-dasharray="5,4"/>
+  <polygon points="343,250 350,264 357,250" fill="#ffca28"/>
+
+  <!-- ==================== STAGE 2: SCRIPT GENERATION ==================== -->
+  <rect x="200" y="268" width="300" height="56" rx="14" fill="url(#sa-grad)" filter="url(#shadow)"/>
+  <text x="230" y="292" fill="rgba(255,255,255,0.6)" font-size="11" font-weight="700">STAGE 2</text>
+  <text x="230" y="312" fill="#ffffff" font-size="17" font-weight="700">Script Generation</text>
+
+  <!-- Left: Knowledge Base cluster -->
+  <rect x="14" y="240" width="156" height="114" rx="10" fill="url(#sa-source)" filter="url(#shadow)" stroke="#7c4dff" stroke-width="1"/>
+  <text x="92" y="262" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="700">Knowledge Base</text>
+  <text x="92" y="280" text-anchor="middle" fill="rgba(255,255,255,0.45)" font-size="10">50+ Technical Articles</text>
+  <text x="92" y="294" text-anchor="middle" fill="rgba(255,255,255,0.45)" font-size="10">5 Research Papers</text>
+  <text x="92" y="308" text-anchor="middle" fill="rgba(255,255,255,0.45)" font-size="10">Narrative Documents</text>
+  <text x="92" y="322" text-anchor="middle" fill="rgba(255,255,255,0.45)" font-size="10">136 AIPs Indexed</text>
+  <text x="92" y="344" text-anchor="middle" fill="rgba(255,255,255,0.35)" font-size="10">Vector DB Retrieval</text>
+  <line x1="170" y1="296" x2="200" y2="296" stroke="#7c4dff" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+  <!-- Right services -->
+  <rect x="530" y="248" width="150" height="36" rx="10" fill="url(#sa-service)" filter="url(#shadow)" stroke="#555" stroke-width="1"/>
+  <text x="605" y="271" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="600">AI Script Writer</text>
+  <line x1="500" y1="280" x2="530" y2="268" stroke="#555" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+  <rect x="530" y="292" width="150" height="36" rx="10" fill="url(#sa-service)" filter="url(#shadow)" stroke="#555" stroke-width="1"/>
+  <text x="605" y="315" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="600">Live Market Data</text>
+  <line x1="500" y1="296" x2="530" y2="310" stroke="#555" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+  <rect x="530" y="336" width="150" height="36" rx="10" fill="url(#sa-service)" filter="url(#shadow)" stroke="#555" stroke-width="1"/>
+  <text x="605" y="359" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="600">Topic History</text>
+  <line x1="500" y1="310" x2="530" y2="354" stroke="#555" stroke-width="1" stroke-dasharray="4,3"/>
+
+  <!-- Arrow down -->
+  <line x1="350" y1="324" x2="350" y2="364" stroke="#7c4dff" stroke-width="2.5" stroke-dasharray="5,4"/>
+  <polygon points="343,360 350,374 357,360" fill="#7c4dff"/>
+
+  <!-- ==================== STAGE 3: PERSONALIZATION (multi-account fork) ==================== -->
+  <!-- Multi-account background -->
+  <rect x="130" y="378" width="440" height="116" rx="14" fill="url(#sa-parallel)" stroke="#7c4dff" stroke-width="1" stroke-dasharray="8,4"/>
+  <text x="350" y="398" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-size="10" font-weight="600" letter-spacing="2">STAGE 3 — PER ACCOUNT</text>
+
+  <!-- Account A -->
+  <rect x="150" y="408" width="170" height="74" rx="12" fill="url(#sa-grad)" filter="url(#shadow)"/>
+  <text x="235" y="432" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="10" font-weight="700">ACCOUNT A</text>
+  <text x="235" y="450" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="700">Personalization</text>
+  <text x="235" y="468" text-anchor="middle" fill="rgba(255,255,255,0.45)" font-size="10">Voice + Style + Personality</text>
+
+  <!-- Account B -->
+  <rect x="380" y="408" width="170" height="74" rx="12" fill="url(#sa-grad)" filter="url(#shadow)"/>
+  <text x="465" y="432" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="10" font-weight="700">ACCOUNT B</text>
+  <text x="465" y="450" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="700">Personalization</text>
+  <text x="465" y="468" text-anchor="middle" fill="rgba(255,255,255,0.45)" font-size="10">Voice + Style + Personality</text>
+
+  <!-- Dots indicating more accounts -->
+  <text x="350" y="476" text-anchor="middle" fill="rgba(255,255,255,0.3)" font-size="18">···</text>
+
+  <!-- Left: Account Profiles -->
+  <rect x="14" y="404" width="110" height="80" rx="10" fill="url(#sa-source)" filter="url(#shadow)" stroke="#7c4dff" stroke-width="1"/>
+  <text x="69" y="428" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="700">Account</text>
+  <text x="69" y="442" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="700">Profiles</text>
+  <text x="69" y="460" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-size="9">Personality</text>
+  <text x="69" y="473" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-size="9">Style Guide</text>
+  <line x1="124" y1="444" x2="150" y2="444" stroke="#7c4dff" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+  <!-- Right: AI Rewrite -->
+  <rect x="580" y="418" width="106" height="52" rx="10" fill="url(#sa-service)" filter="url(#shadow)" stroke="#555" stroke-width="1"/>
+  <text x="633" y="440" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="600">AI Rewrite</text>
+  <text x="633" y="456" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-size="10">Per-account voice</text>
+  <line x1="550" y1="444" x2="580" y2="444" stroke="#555" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+  <!-- Merge arrows back to center -->
+  <line x1="235" y1="494" x2="310" y2="524" stroke="#7c4dff" stroke-width="2" stroke-dasharray="5,4"/>
+  <line x1="465" y1="494" x2="390" y2="524" stroke="#7c4dff" stroke-width="2" stroke-dasharray="5,4"/>
+  <polygon points="343,524 350,538 357,524" fill="#7c4dff"/>
+
+  <!-- ==================== STAGE 4: VIDEO PRODUCTION ==================== -->
+  <!-- Large expanded box for the 12-step beast -->
+  <rect x="130" y="542" width="440" height="260" rx="14" fill="url(#sa-parallel)" stroke="#7c4dff" stroke-width="1" stroke-dasharray="8,4"/>
+  <text x="350" y="562" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-size="10" font-weight="600" letter-spacing="2">STAGE 4 — VIDEO PRODUCTION — 12 STEPS</text>
+
+  <!-- Phase 1 -->
+  <rect x="160" y="574" width="280" height="40" rx="10" fill="url(#sa-grad)" filter="url(#shadow)"/>
+  <text x="190" y="598" fill="#ffffff" font-size="13" font-weight="700">Phase 1: Script Preparation</text>
+
+  <line x1="350" y1="614" x2="350" y2="630" stroke="#7c4dff" stroke-width="2" stroke-dasharray="4,3"/>
+  <polygon points="344,627 350,637 356,627" fill="#7c4dff"/>
+
+  <!-- Phase 2 -->
+  <rect x="160" y="638" width="280" height="40" rx="10" fill="url(#sa-grad)" filter="url(#shadow)"/>
+  <text x="190" y="662" fill="#ffffff" font-size="13" font-weight="700">Phase 2: Audio &amp; Timing</text>
+
+  <line x1="350" y1="678" x2="350" y2="694" stroke="#7c4dff" stroke-width="2" stroke-dasharray="4,3"/>
+  <polygon points="344,691 350,701 356,691" fill="#7c4dff"/>
+
+  <!-- Phase 3: Parallel -->
+  <rect x="160" y="702" width="130" height="50" rx="10" fill="url(#sa-grad)" filter="url(#shadow)"/>
+  <text x="225" y="722" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="700">Presenter</text>
+  <text x="225" y="738" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="10">Rendering</text>
+
+  <rect x="310" y="702" width="130" height="50" rx="10" fill="url(#sa-grad)" filter="url(#shadow)"/>
+  <text x="375" y="722" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="700">Visual Clips</text>
+  <text x="375" y="738" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="10">Generation</text>
+
+  <!-- Parallel indicator -->
+  <text x="300" y="730" text-anchor="middle" fill="#ffca28" font-size="16" font-weight="700">⟷</text>
+
+  <!-- Merge -->
+  <line x1="225" y1="752" x2="290" y2="770" stroke="#7c4dff" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <line x1="375" y1="752" x2="310" y2="770" stroke="#7c4dff" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+  <!-- Phase 4 -->
+  <rect x="200" y="774" width="200" height="36" rx="10" fill="url(#sa-grad)" filter="url(#shadow)"/>
+  <text x="300" y="797" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="700">Phase 4: Final Assembly</text>
+
+  <!-- Right services for Stage 4 -->
+  <rect x="580" y="574" width="106" height="36" rx="10" fill="url(#sa-service)" filter="url(#shadow)" stroke="#555" stroke-width="1"/>
+  <text x="633" y="597" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="600">Text-to-Speech</text>
+  <line x1="550" y1="594" x2="580" y2="594" stroke="#555" stroke-width="1" stroke-dasharray="4,3"/>
+
+  <rect x="580" y="618" width="106" height="36" rx="10" fill="url(#sa-service)" filter="url(#shadow)" stroke="#555" stroke-width="1"/>
+  <text x="633" y="641" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="600">Transcription</text>
+  <line x1="550" y1="638" x2="580" y2="638" stroke="#555" stroke-width="1" stroke-dasharray="4,3"/>
+
+  <rect x="580" y="662" width="106" height="36" rx="10" fill="url(#sa-service)" filter="url(#shadow)" stroke="#555" stroke-width="1"/>
+  <text x="633" y="685" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="600">AI Visual Marks</text>
+  <line x1="550" y1="680" x2="580" y2="680" stroke="#555" stroke-width="1" stroke-dasharray="4,3"/>
+
+  <rect x="580" y="706" width="106" height="36" rx="10" fill="url(#sa-service)" filter="url(#shadow)" stroke="#555" stroke-width="1"/>
+  <text x="633" y="729" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="600">Avatar Engine</text>
+  <line x1="550" y1="724" x2="580" y2="724" stroke="#555" stroke-width="1" stroke-dasharray="4,3"/>
+
+  <rect x="580" y="750" width="106" height="36" rx="10" fill="url(#sa-service)" filter="url(#shadow)" stroke="#555" stroke-width="1"/>
+  <text x="633" y="773" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="600">Video Generator</text>
+  <line x1="550" y1="768" x2="580" y2="768" stroke="#555" stroke-width="1" stroke-dasharray="4,3"/>
+
+  <!-- Left: Asset Library -->
+  <rect x="14" y="700" width="110" height="60" rx="10" fill="url(#sa-source)" filter="url(#shadow)" stroke="#7c4dff" stroke-width="1"/>
+  <text x="69" y="724" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="700">Asset Library</text>
+  <text x="69" y="740" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-size="9">Cached clips</text>
+  <text x="69" y="753" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-size="9">Reuse &amp; dedup</text>
+  <line x1="124" y1="730" x2="160" y2="730" stroke="#7c4dff" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+  <!-- Arrow down -->
+  <line x1="350" y1="810" x2="350" y2="844" stroke="#7c4dff" stroke-width="2.5" stroke-dasharray="5,4"/>
+  <polygon points="343,840 350,854 357,840" fill="#7c4dff"/>
+
+  <!-- ==================== STAGE 5: VISUAL OVERLAYS ==================== -->
+  <rect x="200" y="858" width="300" height="56" rx="14" fill="url(#sa-grad)" filter="url(#shadow)"/>
+  <text x="230" y="882" fill="rgba(255,255,255,0.6)" font-size="11" font-weight="700">STAGE 5</text>
+  <text x="230" y="902" fill="#ffffff" font-size="17" font-weight="700">Visual Overlays</text>
+
+  <!-- Right services -->
+  <rect x="530" y="852" width="150" height="36" rx="10" fill="url(#sa-service)" filter="url(#shadow)" stroke="#555" stroke-width="1"/>
+  <text x="605" y="875" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="600">AI Style Selection</text>
+  <line x1="500" y1="876" x2="530" y2="870" stroke="#555" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+  <rect x="530" y="896" width="150" height="36" rx="10" fill="url(#sa-service)" filter="url(#shadow)" stroke="#555" stroke-width="1"/>
+  <text x="605" y="919" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="600">Animation Engine</text>
+  <line x1="500" y1="890" x2="530" y2="914" stroke="#555" stroke-width="1" stroke-dasharray="4,3"/>
+
+  <!-- Left: Logo Asset Library -->
+  <rect x="14" y="858" width="156" height="60" rx="10" fill="url(#sa-source)" filter="url(#shadow)" stroke="#7c4dff" stroke-width="1"/>
+  <text x="92" y="882" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="700">Logo Asset Library</text>
+  <text x="92" y="898" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-size="10">Crypto &amp; entity logos</text>
+  <text x="92" y="912" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-size="10">Keyword → asset index</text>
+  <line x1="170" y1="886" x2="200" y2="886" stroke="#7c4dff" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+  <!-- Arrow down -->
+  <line x1="350" y1="914" x2="350" y2="948" stroke="#7c4dff" stroke-width="2.5" stroke-dasharray="5,4"/>
+  <polygon points="343,944 350,958 357,944" fill="#7c4dff"/>
+
+  <!-- ==================== STAGE 6: CAPTIONS ==================== -->
+  <rect x="200" y="962" width="300" height="56" rx="14" fill="url(#sa-grad)" filter="url(#shadow)"/>
+  <text x="230" y="986" fill="rgba(255,255,255,0.6)" font-size="11" font-weight="700">STAGE 6</text>
+  <text x="230" y="1006" fill="#ffffff" font-size="17" font-weight="700">Captions</text>
+
+  <!-- Right services -->
+  <rect x="530" y="962" width="150" height="36" rx="10" fill="url(#sa-service)" filter="url(#shadow)" stroke="#555" stroke-width="1"/>
+  <text x="605" y="985" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="600">Transcription</text>
+  <line x1="500" y1="984" x2="530" y2="980" stroke="#555" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+  <rect x="530" y="1006" width="150" height="36" rx="10" fill="url(#sa-service)" filter="url(#shadow)" stroke="#555" stroke-width="1"/>
+  <text x="605" y="1029" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="600">Video Compositor</text>
+  <line x1="500" y1="998" x2="530" y2="1024" stroke="#555" stroke-width="1" stroke-dasharray="4,3"/>
+
+  <!-- Arrow down -->
+  <line x1="350" y1="1018" x2="350" y2="1058" stroke="#7c4dff" stroke-width="2.5" stroke-dasharray="5,4"/>
+  <polygon points="343,1054 350,1068 357,1054" fill="#7c4dff"/>
+
+  <!-- ==================== STAGE 7: PUBLISHING ==================== -->
+  <rect x="200" y="1072" width="300" height="56" rx="14" fill="url(#sa-grad)" filter="url(#shadow)"/>
+  <text x="230" y="1096" fill="rgba(255,255,255,0.6)" font-size="11" font-weight="700">STAGE 7</text>
+  <text x="230" y="1116" fill="#ffffff" font-size="17" font-weight="700">Publishing</text>
+
+  <!-- Right: Distribution API -->
+  <rect x="530" y="1072" width="150" height="56" rx="10" fill="url(#sa-service)" filter="url(#shadow)" stroke="#555" stroke-width="1"/>
+  <text x="605" y="1096" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="600">Distribution API</text>
+  <text x="605" y="1112" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-size="10">Multi-platform upload</text>
+  <line x1="500" y1="1100" x2="530" y2="1100" stroke="#555" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+  <!-- Arrow to platforms -->
+  <line x1="350" y1="1128" x2="350" y2="1168" stroke="#ffca28" stroke-width="2.5" stroke-dasharray="5,4"/>
+  <polygon points="343,1164 350,1178 357,1164" fill="#ffca28"/>
+
+  <!-- Platform fan-out -->
+  <line x1="350" y1="1178" x2="110" y2="1200" stroke="#ffca28" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <line x1="350" y1="1178" x2="280" y2="1200" stroke="#ffca28" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <line x1="350" y1="1178" x2="440" y2="1200" stroke="#ffca28" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <line x1="350" y1="1178" x2="600" y2="1200" stroke="#ffca28" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+  <rect x="40" y="1204" width="140" height="42" rx="10" fill="url(#sa-source)" filter="url(#shadow)" stroke="#ffca28" stroke-width="1.5"/>
+  <text x="110" y="1230" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="700">TikTok</text>
+
+  <rect x="200" y="1204" width="155" height="42" rx="10" fill="url(#sa-source)" filter="url(#shadow)" stroke="#ffca28" stroke-width="1.5"/>
+  <text x="278" y="1230" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="700">YouTube Shorts</text>
+
+  <rect x="370" y="1204" width="155" height="42" rx="10" fill="url(#sa-source)" filter="url(#shadow)" stroke="#ffca28" stroke-width="1.5"/>
+  <text x="448" y="1230" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="700">Instagram Reels</text>
+
+  <rect x="540" y="1204" width="150" height="42" rx="10" fill="url(#sa-source)" filter="url(#shadow)" stroke="#ffca28" stroke-width="1.5"/>
+  <text x="615" y="1230" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="700">Facebook Reels</text>
+
+  <!-- ==================== STATS BAR ==================== -->
+  <line x1="60" y1="1280" x2="640" y2="1280" stroke="#333" stroke-width="1"/>
+
+  <text x="350" y="1310" text-anchor="middle" fill="#ffffff" font-size="16" font-weight="700">Pipeline at a Glance</text>
+
+  <!-- Stat boxes -->
+  <rect x="40" y="1330" width="130" height="64" rx="10" fill="url(#sa-source)" filter="url(#shadow)" stroke="#7c4dff" stroke-width="1"/>
+  <text x="105" y="1356" text-anchor="middle" fill="#ffca28" font-size="22" font-weight="700">7</text>
+  <text x="105" y="1378" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="11">Pipeline Stages</text>
+
+  <rect x="190" y="1330" width="130" height="64" rx="10" fill="url(#sa-source)" filter="url(#shadow)" stroke="#7c4dff" stroke-width="1"/>
+  <text x="255" y="1356" text-anchor="middle" fill="#ffca28" font-size="22" font-weight="700">12</text>
+  <text x="255" y="1378" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="11">Video Sub-Steps</text>
+
+  <rect x="340" y="1330" width="130" height="64" rx="10" fill="url(#sa-source)" filter="url(#shadow)" stroke="#7c4dff" stroke-width="1"/>
+  <text x="405" y="1356" text-anchor="middle" fill="#ffca28" font-size="22" font-weight="700">7+</text>
+  <text x="405" y="1378" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="11">External Services</text>
+
+  <rect x="490" y="1330" width="170" height="64" rx="10" fill="url(#sa-source)" filter="url(#shadow)" stroke="#7c4dff" stroke-width="1"/>
+  <text x="575" y="1356" text-anchor="middle" fill="#ffca28" font-size="22" font-weight="700">30</text>
+  <text x="575" y="1378" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="11">Connected Accounts</text>
+
+  <!-- Footer -->
+  <text x="350" y="1430" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="14" font-weight="600">Fully Automated — Resumable — Multi-Account</text>
+  <text x="350" y="1470" text-anchor="middle" fill="#555555" font-size="12">ALGH — Content Pipeline Automation</text>
+</svg>

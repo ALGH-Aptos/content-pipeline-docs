@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 520" font-family="Inter, Segoe UI, sans-serif">
+  <defs>
+    <linearGradient id="sp-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7c4dff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#651fff;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="sp-source" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3a3a3a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2d2d2d;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-4%" y="-4%" width="108%" height="112%">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+    <filter id="glow">
+      <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#ffca28" flood-opacity="0.5"/>
+    </filter>
+    <filter id="glow-purple">
+      <feDropShadow dx="0" dy="0" stdDeviation="8" flood-color="#7c4dff" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="560" height="520" rx="16" fill="#1e1e1e"/>
+
+  <!-- Title -->
+  <text x="280" y="40" text-anchor="middle" fill="#ffffff" font-size="28" font-weight="700">Script Personalization</text>
+  <text x="280" y="64" text-anchor="middle" fill="#aaaaaa" font-size="15">Same facts, different voice</text>
+
+  <!-- Input: Base Script -->
+  <rect x="180" y="88" width="200" height="44" rx="12" fill="#2d2d2d" filter="url(#glow)" stroke="#ffca28" stroke-width="2.5"/>
+  <text x="280" y="116" text-anchor="middle" fill="#ffca28" font-size="18" font-weight="700">Base Script</text>
+
+  <!-- Arrow down from base script -->
+  <line x1="280" y1="132" x2="280" y2="168" stroke="#ffca28" stroke-width="2.5" stroke-dasharray="6,4"/>
+  <polygon points="272,164 280,178 288,164" fill="#ffca28"/>
+
+  <!-- Two profile boxes side by side -->
+  <!-- Personality Profile -->
+  <rect x="30" y="186" width="236" height="100" rx="12" fill="url(#sp-source)" filter="url(#shadow)" stroke="#7c4dff" stroke-width="1.5"/>
+  <text x="148" y="216" text-anchor="middle" fill="#ffffff" font-size="17" font-weight="700">Personality Profile</text>
+  <text x="148" y="240" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="13">Tone &amp; vocabulary</text>
+  <text x="148" y="258" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="13">Energy &amp; mannerisms</text>
+  <text x="148" y="276" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="13">On-screen persona</text>
+
+  <!-- Video Style Guide -->
+  <rect x="294" y="186" width="236" height="100" rx="12" fill="url(#sp-source)" filter="url(#shadow)" stroke="#7c4dff" stroke-width="1.5"/>
+  <text x="412" y="216" text-anchor="middle" fill="#ffffff" font-size="17" font-weight="700">Video Style Guide</text>
+  <text x="412" y="240" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="13">Hook &amp; pacing rules</text>
+  <text x="412" y="258" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="13">Call-to-action format</text>
+  <text x="412" y="276" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="13">Platform preferences</text>
+
+  <!-- Converging arrows -->
+  <line x1="148" y1="286" x2="230" y2="340" stroke="#7c4dff" stroke-width="2.5" stroke-dasharray="6,4"/>
+  <polygon points="224,333 234,345 228,331" fill="#7c4dff"/>
+
+  <line x1="412" y1="286" x2="330" y2="340" stroke="#7c4dff" stroke-width="2.5" stroke-dasharray="6,4"/>
+  <polygon points="332,331 326,345 336,333" fill="#7c4dff"/>
+
+  <!-- Central: AI Rewrite -->
+  <rect x="130" y="348" width="300" height="70" rx="16" fill="url(#sp-grad)" filter="url(#glow-purple)"/>
+  <text x="280" y="380" text-anchor="middle" fill="#ffffff" font-size="21" font-weight="700">AI Voice Rewrite</text>
+  <text x="280" y="404" text-anchor="middle" fill="rgba(255,255,255,0.55)" font-size="14">Full delivery rewrite, facts untouched</text>
+
+  <!-- Arrow to output -->
+  <line x1="280" y1="418" x2="280" y2="450" stroke="#ffca28" stroke-width="3" stroke-dasharray="6,4"/>
+  <polygon points="272,446 280,460 288,446" fill="#ffca28"/>
+
+  <!-- Output: Flavored Script -->
+  <rect x="155" y="464" width="250" height="44" rx="12" fill="#2d2d2d" filter="url(#glow)" stroke="#ffca28" stroke-width="2.5"/>
+  <text x="280" y="492" text-anchor="middle" fill="#ffca28" font-size="19" font-weight="700">Flavored Script</text>
+</svg>
